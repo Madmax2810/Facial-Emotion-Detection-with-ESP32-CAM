@@ -1,0 +1,30 @@
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+ENV/
+*.env
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Flask Cache
+instance/
+.webassets-cache
+
+# Arduino
+*.ino.*
+*.elf
+*.bin
+*.hex
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Saved Frames
+saved_frames/
