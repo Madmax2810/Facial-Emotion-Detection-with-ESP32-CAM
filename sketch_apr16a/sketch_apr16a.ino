@@ -3,11 +3,11 @@
 #include <HTTPClient.h>
 
 // Replace with your actual WiFi credentials
-const char* ssid = "manas's S21 FE";
-const char* password = "iusu5050";
+const char* ssid = "------------------";
+const char* password = "-----";
 
 // Replace with your server IP and port
-const char* server_ip = "http://192.168.112.253";  // Server (laptop) IP
+const char* server_ip = "------------";  // Server (laptop) IP
 const int server_port = 8000;           // Server port
 String server_url = "/upload"; // Flask server route for receiving images
 
@@ -83,7 +83,7 @@ void loop() {
   Serial.printf("[LOG] Captured image: %d bytes\n", fb->len);
 
   // Set up HTTP request
-  if (http.begin("http://192.168.112.253:8000/upload")) {
+  if (http.begin("---------------------------/upload")) { // IP address of the server + 8000
     http.addHeader("Content-Type", "application/octet-stream"); // Set content type for raw data
     
     // Send image data as POST request
